@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import VemreLogo from '../components/logo/vemre1.png';
+// import VemreLogo from '../components/logo/vemre1.png';
 import Image from 'next/image'
 import Link from 'next/link';
 
@@ -39,7 +39,9 @@ const Navbar = () => {
     <div className='bg-[#0b573d] font-bold flex justify-between items-center h-18 md:h-20 lg:h-18 mx-auto lg:text-[16px] text-[#ffffff] lg:pr-8 sticky top-0 z-50'>
       {/* Logo */}
      <Link href="/" > 
-      <Image src={VemreLogo} 
+      <Image src={"/logo/vemre1.png"} 
+       width={100}
+       height={100}
      alt="avatar"  className='cursor-pointer w-20 h-28 md:w-36 md:h-[140px] lg:pb-1' /></Link> 
 
       {/* Desktop Navigation */}
@@ -71,7 +73,7 @@ const Navbar = () => {
         {/* Mobile Logo */}
         {/* <a href="#"> */}
         <Link href="/">
-          <Image src={VemreLogo} 
+          <Image src={"/logo/vemre1.png"} 
          alt="avatar"
          width={100}
          height={100}

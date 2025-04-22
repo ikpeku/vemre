@@ -2,9 +2,13 @@
 
 
 import React, { useState } from 'react';
-import Stripe from '../components/logo/stripe.jpeg';
-import Efcc from '../components/logo/efcc.jpeg';
-import Lemfi from '../components/logo/lemfi.jpeg';
+
+
+// import Stripe from '../components/logo/stripe.jpeg';
+// import Efcc from '../components/logo/efcc.jpeg';
+// import Lemfi from '../components/logo/lemfi.jpeg';
+
+
 import { FaGooglePlay } from "react-icons/fa6";
 import { FaApple } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
@@ -30,10 +34,13 @@ import Image from 'next/image'
           <div className='flex flex-col items-center md:items-start py-4 px-14 md:px-4 lg:px-16'>
             <h1 className='text-center px-2 font-semibold pl-2 md:pr-10 md:px-6 lg:px-4 py-2 text-lg md:text-xl lg:text-2xl'>Our Partners</h1>
             <div className='flex flex-row justify-center md:justify-start'>
-              <Image src={Stripe} alt="Stripe Logo" className='rounded-full mx-2 size-10 md:ml-2'/>
+              <Image src={"/logo/stripe.jpeg"}  width={100}
+         height={100} alt="Stripe Logo" className='rounded-full mx-2 size-10 md:ml-2'/>
               
-               <Image src={Lemfi} alt="Lemfi Logo" className='rounded-full mx-2 size-10' /> 
-               <Image src={Efcc} alt="Efcc Logo" className='rounded-full mx-2 size-10' /> 
+               <Image src={"/logo/lemfi.jpeg"}  width={100}
+         height={100} alt="Lemfi Logo" className='rounded-full mx-2 size-10' /> 
+               <Image src={"/logo/efcc.jpeg"}  width={100}
+         height={100} alt="Efcc Logo" className='rounded-full mx-2 size-10' /> 
             </div>
           </div>
 
