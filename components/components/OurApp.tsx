@@ -1,6 +1,4 @@
 import React from 'react';
-// import demo from '../video/demo.mp4';
-// import Demo from "@/components/components/video/demo.mp4"
 import Link from 'next/link';
 import { Suspense } from 'react'
 

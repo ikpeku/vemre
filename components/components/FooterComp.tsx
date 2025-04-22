@@ -3,7 +3,7 @@
 
 import React, { useState } from 'react';
 import Stripe from '../components/logo/stripe.jpeg';
-import Efcc from '../components/logo/efcc.jpg';
+import Efcc from '../components/logo/efcc.jpeg';
 import Lemfi from '../components/logo/lemfi.jpeg';
 import { FaGooglePlay } from "react-icons/fa6";
 import { FaApple } from "react-icons/fa";
