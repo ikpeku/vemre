@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutt from './pics/aboutt.jpg';
+// import aboutt from './pics/aboutt.jpg';
 import Image from 'next/image';
 
 
@@ -11,10 +11,10 @@ const About = () => {
       <div className="container mx-auto px-8 lg:px-16 py-4 flex flex-col lg:flex-row items-center">
         <div className="mb-6 md:mb-0">
           <Image
-            src={aboutt} 
+            src={"/pics/aboutt.jpg"} 
             alt="About Us"
-            width={100}
-            height={100}
+            width={500}
+            height={500}
             className="lg:w-[550px] w-full h-auto rounded-lg shadow-lg md:pb-8"
           />
         </div>

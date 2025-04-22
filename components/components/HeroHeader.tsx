@@ -1,9 +1,11 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
-import slide1 from './pics/1slide.jpg';
-import slide2 from './pics/2slide.jpg';
-import slide3 from './pics/3rdslide copy.jpg';
+
+// import slide1 from './pics/1slide.jpg';
+// import slide2 from './pics/2slide.jpg';
+// import slide3 from './pics/3rdslide copy.jpg';
+
 import Image from 'next/image';
 
 const slides = [
@@ -11,19 +13,19 @@ const slides = [
     id: 1,
     title: 'Welcome to Vemre',
     description: 'Naija Tech Savvies Penetrating the Global Tech Space with Ease.',
-    image: slide1 ,
+    image: '/pics/1slide.jpg' ,
   },
   {
     id: 2,
     title: 'Explore Our Services',
     description: 'Globalization Made Easy for Naija Tech Savvies.',
-    image: slide2 ,
+    image: '/pics/2slide.jpg' ,
   },
   {
     id: 3,
     title: 'Navigating the Global Tech Market Space',
     description: 'Helping Tech Savvies Penetrate the Global Tech Market with Ease.',
-    image: slide3 ,
+    image: '/pics/3rdslide copy.jpg' ,
   },
 ];
 
@@ -60,6 +62,8 @@ const HeroHeader = () => {
           <Image
             src={slide.image}
             alt={slide.title}
+            width={600}
+            height={600}
             className="w-full h-full object-cover inset-0 bl" 
           />
 

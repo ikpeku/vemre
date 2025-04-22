@@ -1,9 +1,9 @@
 "use client"
 
 import React, { useState } from 'react';
-import man1 from './pics/aremu.jpg';
-import man2 from './pics/tope.jpg';
-import woman from './pics/temidayo.jpg';
+// import man1 from './pics/aremu.jpg';
+// import man2 from './pics/tope.jpg';
+// import woman from './pics/temidayo.jpg';
 import Image from 'next/image';
 
 const teamMembers = [
@@ -12,7 +12,7 @@ const teamMembers = [
     name: 'VICTOR OLUSHOLA AREMU',
     qualification: '(B.Tech, MsCIA, CISA, CEH, CHFI)',
     title: 'Founders',
-    image: man1,
+    image: '/pics/aremu.jpg',
     description: 'Decorated Sergeant with 10 years of service in the US Army, leading high-performing teams in dynamic environments. Expert Cybersecurity Analyst with proficiency in threat analysis, penetration testing, and incident response. Holding industry-recognized certifications, with a unique blend of military leadership and technical expertise, driving innovative cybersecurity solutions.',
   },
   {
@@ -20,7 +20,7 @@ const teamMembers = [
     name: '⁠TEMIDAYO OLUWASEGUN ABIODUN',
     qualification: '(B.Ed, MBA, fCMgr)',
     title: 'Founders',
-    image: woman,
+    image: '/pics/tope.jpg',
     description: 'A Chartered Manager and Business Administrator with CMI Level 7 Diploma Certification, driving business growth through strategic leadership and management expertise. Skilled graphics designer with proficiency in Adobe Creative Suite. Experienced primary educator with expertise in instructional design, visual learning materials, and child development. A versatile professional with a unique blend of management, creative, and educational skills, offering excellent problem-solving, project management, and communication abilities.',
   },
   {
@@ -28,7 +28,7 @@ const teamMembers = [
     name: '⁠TOPE ADEWALE ABIODUN',
     qualification: '(B.Ed, B.Sc Health Promotion and Education)',
     title: 'Founders',
-    image: man2,
+    image: "/pics/temidayo.jpg",
     description: 'Results-driven Graphics Designer and Health Educator with vast experience. Skilled in Adobe Creative Suite and design principles, with a strong background in health education and promotion. Proven track record of delivering engaging visual communications and educational programs, with excellent communication and project management skills.',
   },
 ];
@@ -64,6 +64,8 @@ const TeamMemberCard = ({ member }: {member:  typeof teamMembers[0]}) => {
       <Image
         src={member.image}
         alt={member.name}
+        width={600}
+        height={600}
         className="size-30 rounded-full mb-4"
       />
       <h3 className="text-xl font-semibold text-gray-100">{member.name}</h3>
