@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import QueryClientWrapper from '@/components/QuertWrapper'
+import Navbar from '@/components/components/NavBar'
+import ScrollReveal from '@/components/components/ScrollReveal'
+import FooterComp from '@/components/components/FooterComp'
 
 
 export const metadata: Metadata = {
@@ -30,7 +33,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
       <QueryClientWrapper>
+        <Navbar />
         {children}
+        <ScrollReveal><FooterComp /></ScrollReveal> 
         </QueryClientWrapper>
         </body>
     </html>

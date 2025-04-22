@@ -38,9 +38,9 @@ export default async function middleware(req: NextRequest) {
   }
 
 //   // If the path is the root and the user is not authenticated, redirect to login
-  if (path === "/" && !isAuthenticated) {
-    return NextResponse.redirect(new URL("/login", req.url))
-  }
+  // if (path === "/" && !isAuthenticated) {
+  //   return NextResponse.redirect(new URL("/login", req.url))
+  // }
 
 // stop here
 
