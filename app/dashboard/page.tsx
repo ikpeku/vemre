@@ -173,11 +173,8 @@ export default function Dashboard() {
   })) || [];
 
 
-  const transacts = data?.data.reduce(
-    (accumulator, item) => {
-      if (item.isPending) {
-        return accumulator;
-      }
+  const transacts = data?.data.reduce((accumulator, item) => {
+      
 
       if (item.type == "Received" && !item.isVemreCharge && !item.isPending) {
         accumulator.Received += item.amount!;
@@ -189,7 +186,7 @@ export default function Dashboard() {
       if (item.type == "Withdraw" && !item.isVemreCharge && !item.isPending) {
         accumulator.Withdraw += item.amount!;
       }
-      if (item.type == "Withdraw"  && item.isPending) {
+      if (item.type == "Withdraw"   && item.isPending ) {
         accumulator.PendingWithdraw += item.amount!;
       }
 
