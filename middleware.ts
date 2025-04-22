@@ -2,7 +2,7 @@ import { type NextRequest, NextResponse } from "next/server"
 
 // Define protected and public routes
 const protectedRoutes = ["/dashboard", "/transactions"]
-const publicRoutes = ["/login"]
+const publicRoutes = ["/login", "/"]
 
 
 export default async function middleware(req: NextRequest) {
@@ -20,9 +20,9 @@ export default async function middleware(req: NextRequest) {
   const isAuthenticated = authCookie === "authenticated";
 
 
-//   // If the route is protected and the user is not authenticated, redirect to login
+//   // If the route is protected and the user is not authenticated, redirect to homepage
   if (isProtectedRoute && !isAuthenticated) {
-    const url = new URL("/login", req.url)
+    const url = new URL("/", req.url)
     url.searchParams.set("from", path)
     return NextResponse.redirect(url)
   }

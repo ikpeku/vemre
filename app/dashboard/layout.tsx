@@ -21,11 +21,11 @@ export default function DashboardLayout({
       const token = localStorage.getItem("accessToken");
 
       if (!isAuthenticated) {
-        router.push("/login")
+        router.replace("/")
       }
 
       if (!token) {
-        router.push("/login")
+        router.replace("/")
       }
 
     }

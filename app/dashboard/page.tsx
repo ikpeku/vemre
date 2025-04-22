@@ -150,7 +150,7 @@ export default function Dashboard() {
     document.cookie = "auth=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT"
 
     localStorage.removeItem("accessToken")
-    router.push("/login")
+    router.replace("/")
   }
 
 
