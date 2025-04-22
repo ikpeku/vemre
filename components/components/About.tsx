@@ -13,6 +13,8 @@ const About = () => {
           <Image
             src={aboutt} 
             alt="About Us"
+            width={100}
+            height={100}
             className="lg:w-[550px] w-full h-auto rounded-lg shadow-lg md:pb-8"
           />
         </div>
